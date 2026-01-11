@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/ContentsMerged.css" />
+    <title>Class GenericClass</title>
+</head>
+<body><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Class BOOSEVariableHelper</div>
+    <div id="Contents" />
+
+    
+ Helper class for type conversion and expression evaluation in BOOSE programs.
+ Provides methods to convert string expressions to int, double, and bool values
+ using the program's evaluator while maintaining precision.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public static class BOOSEVariableHelper</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method ToInt</div>
+    <div id="Contents" />
+
+    
+ Converts an expression to an integer using the program's evaluator.
+ Supports variable references, arithmetic expressions, and literals.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public static int ToInt(StoredProgram program, string expr)</pre></td></tr></tbody></table>
+    
+    <div class='CommentHeader'>Parameters</div>
+<div class='CommentParameterName'>program</div><div class='ParameterCommentContainer'>
+The StoredProgram context containing variables.
+</div>
+<div class='CommentParameterName'>expr</div><div class='ParameterCommentContainer'>
+The expression to evaluate (e.g., "10", "width", "x + 5").
+</div>
+
+    <div class='CommentHeader'>Return Value</div>
+<div class='ParameterCommentContainer'>
+The integer result of the expression.
+</div>
+
+    
+    
+    
+<div id='SectionHeader1' class='SectionHeader'>
+   <img id='SectionExpanderImg1' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' /> 
+   <span class='SectionHeader'>
+       <span class='ArrowCursor'>
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id='SectionContainerDiv1' class='SectionContainer'>
+<table class='MembersTable'>
+<col width='25%' />
+<col width='75%' />
+<tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class='PseudoLink'>ArgumentNullException</span></td>
+<td>Thrown when program is null.</td>
+</tr>
+<tr>
+<td><span class='PseudoLink'>CommandException</span></td>
+<td>Thrown when expression cannot be parsed as integer.</td>
+</tr>
+</table
+</div>
+</div>
+
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method ToDouble</div>
+    <div id="Contents" />
+
+    
+ Converts an expression to a double using the program's evaluator.
+ Preserves full floating-point precision (e.g., 15.5, 174.044086).
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public static double ToDouble(StoredProgram program, string expr)</pre></td></tr></tbody></table>
+    
+    <div class='CommentHeader'>Parameters</div>
+<div class='CommentParameterName'>program</div><div class='ParameterCommentContainer'>
+The StoredProgram context containing variables.
+</div>
+<div class='CommentParameterName'>expr</div><div class='ParameterCommentContainer'>
+The expression to evaluate (e.g., "3.14", "radius * 2.5").
+</div>
+
+    <div class='CommentHeader'>Return Value</div>
+<div class='ParameterCommentContainer'>
+The double result of the expression.
+</div>
+
+    
+    
+    
+<div id='SectionHeader1' class='SectionHeader'>
+   <img id='SectionExpanderImg1' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' /> 
+   <span class='SectionHeader'>
+       <span class='ArrowCursor'>
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id='SectionContainerDiv1' class='SectionContainer'>
+<table class='MembersTable'>
+<col width='25%' />
+<col width='75%' />
+<tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class='PseudoLink'>ArgumentNullException</span></td>
+<td>Thrown when program is null.</td>
+</tr>
+<tr>
+<td><span class='PseudoLink'>CommandException</span></td>
+<td>Thrown when expression cannot be parsed as double.</td>
+</tr>
+</table
+</div>
+</div>
+
+    
+    
+
+</div>
+
+</p><hr></hr><p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method ToBool</div>
+    <div id="Contents" />
+
+    
+ Converts an expression to a boolean using the program's evaluator.
+ Supports various boolean representations: true/false, 1/0, yes/no.
+ 
+        <div id='SectionHeader0' class='SectionHeader'>
+        <img id='SectionExpanderImg0' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' >
+        <span class='SectionHeader'>
+            <span class='ArrowCursor' >
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id='SectionContainerDiv0' class='SectionContainer'>
+    <table class='CodeTable'>
+    <colgroup><col width='100%'></colgroup>
+    <tbody><tr class='CodeTable'><th class='CodeTable'>C#</th></tr><tr class='CodeTable'><td class='CodeTable'><pre style='margin-left: 2px;'>
+    public static bool ToBool(StoredProgram program, string expr)</pre></td></tr></tbody></table>
+    
+    <div class='CommentHeader'>Parameters</div>
+<div class='CommentParameterName'>program</div><div class='ParameterCommentContainer'>
+The StoredProgram context containing variables.
+</div>
+<div class='CommentParameterName'>expr</div><div class='ParameterCommentContainer'>
+The expression to evaluate (e.g., "true", "x &gt; 5", "1").
+</div>
+
+    <div class='CommentHeader'>Return Value</div>
+<div class='ParameterCommentContainer'>
+The boolean result of the expression.
+</div>
+
+    
+    
+    
+<div id='SectionHeader1' class='SectionHeader'>
+   <img id='SectionExpanderImg1' src='C:\Users\Lenovo\AppData\Roaming\DocPreview\1.6.2.0\css/BigSquareExpanded.gif' alt='Collapse/Expand' /> 
+   <span class='SectionHeader'>
+       <span class='ArrowCursor'>
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id='SectionContainerDiv1' class='SectionContainer'>
+<table class='MembersTable'>
+<col width='25%' />
+<col width='75%' />
+<tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class='PseudoLink'>ArgumentNullException</span></td>
+<td>Thrown when program is null.</td>
+</tr>
+<tr>
+<td><span class='PseudoLink'>CommandException</span></td>
+<td>Thrown when expression cannot be parsed as boolean.</td>
+</tr>
+</table
+</div>
+</div>
+
+    
+    
+
+</div>
+</p>
+</body>
+</html>
